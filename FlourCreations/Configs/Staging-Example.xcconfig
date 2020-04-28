@@ -3,5 +3,5 @@
 API_URL = https:/$()/your-staging-api.example.com
 
 // App Settings
-APP_NAME = DM-iOS-Template (staging)
-APP_BUNDLE_ID = com.defmethod.DM-iOS-Template.staging
+APP_NAME = FlourCreations (staging)
+APP_BUNDLE_ID = com.joshuabook.FlourCreations.staging

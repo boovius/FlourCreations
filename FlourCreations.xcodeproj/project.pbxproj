@@ -19,7 +19,7 @@
 		0678B272242565D100D4973C /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0678B270242565D100D4973C /* SignIn.storyboard */; };
 		0678B274242565D200D4973C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0678B273242565D200D4973C /* Assets.xcassets */; };
 		0678B277242565D200D4973C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0678B275242565D200D4973C /* LaunchScreen.storyboard */; };
-		0678B282242565D200D4973C /* PagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0678B281242565D200D4973C /* PagerTests.swift */; };
+		0678B282242565D200D4973C /* FlourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0678B281242565D200D4973C /* FlourTests.swift */; };
 		06A9C52E242BD8D3004E9D2A /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A9C52D242BD8D3004E9D2A /* AppSession.swift */; };
 		06A9C530242BD91C004E9D2A /* DefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A9C52F242BD91C004E9D2A /* DefaultsKey.swift */; };
 		06A9C533242D3879004E9D2A /* JSONDecoderWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A9C532242D3879004E9D2A /* JSONDecoderWrapper.swift */; };
@@ -30,6 +30,9 @@
 		06A9FB64242A6D9D008B59DE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A9FB63242A6D9D008B59DE /* NetworkClient.swift */; };
 		06F2EDF8242A849E00E89C5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F2EDF7242A849E00E89C5B /* User.swift */; };
 		06F2EDFA242A867D00E89C5B /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F2EDF9242A867D00E89C5B /* SignInError.swift */; };
+		5EA006CD2458B54F009CD352 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006CC2458B54F009CD352 /* GalleryView.swift */; };
+		5EA006CF2458BC2D009CD352 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006CE2458BC2D009CD352 /* GalleryItem.swift */; };
+		5EA006D12458C2D9009CD352 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006D02458C2D9009CD352 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,7 @@
 		0676B5F42433CC850096CFD2 /* Staging-Example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Staging-Example.xcconfig"; sourceTree = "<group>"; };
 		0676B5F52433CC960096CFD2 /* Production-Example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Production-Example.xcconfig"; sourceTree = "<group>"; };
 		0676B5F62433D0C60096CFD2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		0678B267242565D100D4973C /* DM-iOS-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DM-iOS-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0678B267242565D100D4973C /* FlourCreations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlourCreations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0678B26A242565D100D4973C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0678B26C242565D100D4973C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0678B26E242565D100D4973C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +63,8 @@
 		0678B273242565D200D4973C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0678B276242565D200D4973C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0678B278242565D200D4973C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0678B27D242565D200D4973C /* DM-iOS-TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DM-iOS-TemplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0678B281242565D200D4973C /* PagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTests.swift; sourceTree = "<group>"; };
+		0678B27D242565D200D4973C /* FlourCreationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlourCreationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0678B281242565D200D4973C /* FlourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlourTests.swift; sourceTree = "<group>"; };
 		0678B283242565D200D4973C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06A9C52D242BD8D3004E9D2A /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 		06A9C52F242BD91C004E9D2A /* DefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKey.swift; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		06A9FB63242A6D9D008B59DE /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		06F2EDF7242A849E00E89C5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		06F2EDF9242A867D00E89C5B /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
+		5EA006CC2458B54F009CD352 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		5EA006CE2458BC2D009CD352 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		5EA006D02458C2D9009CD352 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,8 @@
 		0678B25E242565D000D4973C = {
 			isa = PBXGroup;
 			children = (
-				0678B269242565D100D4973C /* DM-iOS-Template */,
-				0678B280242565D200D4973C /* DM-iOS-TemplateTests */,
+				0678B269242565D100D4973C /* FlourCreations */,
+				0678B280242565D200D4973C /* FlourCreationsTests */,
 				0678B268242565D100D4973C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,15 +123,16 @@
 		0678B268242565D100D4973C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0678B267242565D100D4973C /* DM-iOS-Template.app */,
-				0678B27D242565D200D4973C /* DM-iOS-TemplateTests.xctest */,
+				0678B267242565D100D4973C /* FlourCreations.app */,
+				0678B27D242565D200D4973C /* FlourCreationsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0678B269242565D100D4973C /* DM-iOS-Template */ = {
+		0678B269242565D100D4973C /* FlourCreations */ = {
 			isa = PBXGroup;
 			children = (
+				5EA006CB2458B53B009CD352 /* Gallery */,
 				0676B5F22433CB840096CFD2 /* Configs */,
 				06A9C536242D3F8D004E9D2A /* InterimFeed */,
 				06A9C531242D3855004E9D2A /* Utility */,
@@ -136,16 +143,16 @@
 				0678B273242565D200D4973C /* Assets.xcassets */,
 				0678B275242565D200D4973C /* LaunchScreen.storyboard */,
 			);
-			path = "DM-iOS-Template";
+			path = FlourCreations;
 			sourceTree = "<group>";
 		};
-		0678B280242565D200D4973C /* DM-iOS-TemplateTests */ = {
+		0678B280242565D200D4973C /* FlourCreationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0678B281242565D200D4973C /* PagerTests.swift */,
+				0678B281242565D200D4973C /* FlourTests.swift */,
 				0678B283242565D200D4973C /* Info.plist */,
 			);
-			path = "DM-iOS-TemplateTests";
+			path = FlourCreationsTests;
 			sourceTree = "<group>";
 		};
 		06A9C52C242BD8C1004E9D2A /* Base */ = {
@@ -205,16 +212,26 @@
 			children = (
 				06F2EDF9242A867D00E89C5B /* SignInError.swift */,
 				06F2EDF7242A849E00E89C5B /* User.swift */,
+				5EA006D02458C2D9009CD352 /* File.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5EA006CB2458B53B009CD352 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				5EA006CC2458B54F009CD352 /* GalleryView.swift */,
+				5EA006CE2458BC2D009CD352 /* GalleryItem.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0678B266242565D000D4973C /* DM-iOS-Template */ = {
+		0678B266242565D000D4973C /* FlourCreations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0678B286242565D200D4973C /* Build configuration list for PBXNativeTarget "DM-iOS-Template" */;
+			buildConfigurationList = 0678B286242565D200D4973C /* Build configuration list for PBXNativeTarget "FlourCreations" */;
 			buildPhases = (
 				0678B263242565D000D4973C /* Sources */,
 				0678B264242565D000D4973C /* Frameworks */,
@@ -224,14 +241,14 @@
 			);
 			dependencies = (
 			);
-			name = "DM-iOS-Template";
+			name = FlourCreations;
 			productName = Pager;
-			productReference = 0678B267242565D100D4973C /* DM-iOS-Template.app */;
+			productReference = 0678B267242565D100D4973C /* FlourCreations.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0678B27C242565D200D4973C /* DM-iOS-TemplateTests */ = {
+		0678B27C242565D200D4973C /* FlourCreationsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0678B289242565D200D4973C /* Build configuration list for PBXNativeTarget "DM-iOS-TemplateTests" */;
+			buildConfigurationList = 0678B289242565D200D4973C /* Build configuration list for PBXNativeTarget "FlourCreationsTests" */;
 			buildPhases = (
 				0678B279242565D200D4973C /* Sources */,
 				0678B27A242565D200D4973C /* Frameworks */,
@@ -242,9 +259,9 @@
 			dependencies = (
 				0678B27F242565D200D4973C /* PBXTargetDependency */,
 			);
-			name = "DM-iOS-TemplateTests";
+			name = FlourCreationsTests;
 			productName = PagerTests;
-			productReference = 0678B27D242565D200D4973C /* DM-iOS-TemplateTests.xctest */;
+			productReference = 0678B27D242565D200D4973C /* FlourCreationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -266,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0678B262242565D000D4973C /* Build configuration list for PBXProject "DM-iOS-Template" */;
+			buildConfigurationList = 0678B262242565D000D4973C /* Build configuration list for PBXProject "FlourCreations" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,8 +296,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0678B266242565D000D4973C /* DM-iOS-Template */,
-				0678B27C242565D200D4973C /* DM-iOS-TemplateTests */,
+				0678B266242565D000D4973C /* FlourCreations */,
+				0678B27C242565D200D4973C /* FlourCreationsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,11 +336,14 @@
 				06A9C52E242BD8D3004E9D2A /* AppSession.swift in Sources */,
 				06A9C533242D3879004E9D2A /* JSONDecoderWrapper.swift in Sources */,
 				0678B26D242565D100D4973C /* SceneDelegate.swift in Sources */,
+				5EA006D12458C2D9009CD352 /* File.swift in Sources */,
 				0676B5E52432A3B30096CFD2 /* ViewModeled.swift in Sources */,
 				0676B5E12432566D0096CFD2 /* SignInViewModel.swift in Sources */,
 				065867A4242EA07100AB793B /* ErrorResponse.swift in Sources */,
+				5EA006CF2458BC2D009CD352 /* GalleryItem.swift in Sources */,
 				06F2EDF8242A849E00E89C5B /* User.swift in Sources */,
 				06A9C530242BD91C004E9D2A /* DefaultsKey.swift in Sources */,
+				5EA006CD2458B54F009CD352 /* GalleryView.swift in Sources */,
 				06A9C53E242D4216004E9D2A /* FeedCoordinator.swift in Sources */,
 				0676B5F72433D0C60096CFD2 /* Environment.swift in Sources */,
 				06F2EDFA242A867D00E89C5B /* SignInError.swift in Sources */,
@@ -336,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0678B282242565D200D4973C /* PagerTests.swift in Sources */,
+				0678B282242565D200D4973C /* FlourTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +365,7 @@
 /* Begin PBXTargetDependency section */
 		0678B27F242565D200D4973C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0678B266242565D000D4973C /* DM-iOS-Template */;
+			target = 0678B266242565D000D4973C /* FlourCreations */;
 			targetProxy = 0678B27E242565D200D4973C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -435,16 +455,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F52433CC960096CFD2 /* Production-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations;
+				APP_NAME = FlourCreations;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -455,21 +477,23 @@
 			baseConfigurationReference = 0676B5F52433CC960096CFD2 /* Production-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations;
+				APP_NAME = FlourCreations;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Debug (Production)";
 		};
@@ -538,16 +562,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F42433CC850096CFD2 /* Staging-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.staging;
+				APP_NAME = "FlourCreations (staging)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -558,21 +584,23 @@
 			baseConfigurationReference = 0676B5F42433CC850096CFD2 /* Staging-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.staging;
+				APP_NAME = "FlourCreations (staging)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Debug (Staging)";
 		};
@@ -635,16 +663,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F42433CC850096CFD2 /* Staging-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.staging;
+				APP_NAME = "FlourCreations (staging)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -655,21 +685,23 @@
 			baseConfigurationReference = 0676B5F42433CC850096CFD2 /* Staging-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.staging;
+				APP_NAME = "FlourCreations (staging)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Release (Staging)";
 		};
@@ -732,16 +764,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F52433CC960096CFD2 /* Production-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations;
+				APP_NAME = FlourCreations;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -752,21 +786,23 @@
 			baseConfigurationReference = 0676B5F52433CC960096CFD2 /* Production-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations;
+				APP_NAME = FlourCreations;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Release (Production)";
 		};
@@ -890,16 +926,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F32433CC650096CFD2 /* Development-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.dev;
+				APP_NAME = "FlourCreations (dev)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -909,16 +947,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0676B5F32433CC650096CFD2 /* Development-Example.xcconfig */;
 			buildSettings = {
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.dev;
+				APP_NAME = "FlourCreations (dev)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
-				INFOPLIST_FILE = "DM-iOS-Template/Configs/Info.plist";
+				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.defmethod.DM-iOS-Template";
-				PRODUCT_NAME = "DM-iOS-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreations;
+				PRODUCT_NAME = FlourCreations;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -929,21 +969,23 @@
 			baseConfigurationReference = 0676B5F32433CC650096CFD2 /* Development-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.dev;
+				APP_NAME = "FlourCreations (dev)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Debug (Development)";
 		};
@@ -952,28 +994,30 @@
 			baseConfigurationReference = 0676B5F32433CC650096CFD2 /* Development-Example.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_BUNDLE_ID = com.joshuabook.FlourCreations.dev;
+				APP_NAME = "FlourCreations (dev)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XK7M74ULJ;
-				INFOPLIST_FILE = "DM-iOS-TemplateTests/Info.plist";
+				INFOPLIST_FILE = FlourCreationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yisselda.DM-iOS-TemplateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshuabook.FlourCreationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DM-iOS-Template.app/DM-iOS-Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlourCreations.app/FlourCreations";
 			};
 			name = "Release (Developement)";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0678B262242565D000D4973C /* Build configuration list for PBXProject "DM-iOS-Template" */ = {
+		0678B262242565D000D4973C /* Build configuration list for PBXProject "FlourCreations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0678B284242565D200D4973C /* Debug (Development) */,
@@ -986,7 +1030,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release (Staging)";
 		};
-		0678B286242565D200D4973C /* Build configuration list for PBXNativeTarget "DM-iOS-Template" */ = {
+		0678B286242565D200D4973C /* Build configuration list for PBXNativeTarget "FlourCreations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0678B287242565D200D4973C /* Debug (Development) */,
@@ -999,7 +1043,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release (Staging)";
 		};
-		0678B289242565D200D4973C /* Build configuration list for PBXNativeTarget "DM-iOS-TemplateTests" */ = {
+		0678B289242565D200D4973C /* Build configuration list for PBXNativeTarget "FlourCreationsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0678B28A242565D200D4973C /* Debug (Development) */,

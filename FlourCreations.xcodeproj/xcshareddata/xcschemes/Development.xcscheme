@@ -15,15 +15,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0678B266242565D000D4973C"
-               BuildableName = "DM-iOS-Template.app"
-               BlueprintName = "DM-iOS-Template"
-               ReferencedContainer = "container:DM-iOS-Template.xcodeproj">
+               BuildableName = "FlourCreations.app"
+               BlueprintName = "FlourCreations"
+               ReferencedContainer = "container:FlourCreations.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug (Production)"
+      buildConfiguration = "Debug (Development)"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -33,15 +33,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0678B27C242565D200D4973C"
-               BuildableName = "DM-iOS-TemplateTests.xctest"
-               BlueprintName = "DM-iOS-TemplateTests"
-               ReferencedContainer = "container:DM-iOS-Template.xcodeproj">
+               BuildableName = "FlourCreationsTests.xctest"
+               BlueprintName = "FlourCreationsTests"
+               ReferencedContainer = "container:FlourCreations.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug (Production)"
+      buildConfiguration = "Debug (Development)"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -55,14 +55,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0678B266242565D000D4973C"
-            BuildableName = "DM-iOS-Template.app"
-            BlueprintName = "DM-iOS-Template"
-            ReferencedContainer = "container:DM-iOS-Template.xcodeproj">
+            BuildableName = "FlourCreations.app"
+            BlueprintName = "FlourCreations"
+            ReferencedContainer = "container:FlourCreations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release (Production)"
+      buildConfiguration = "Release (Developement)"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -72,17 +72,17 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0678B266242565D000D4973C"
-            BuildableName = "DM-iOS-Template.app"
-            BlueprintName = "DM-iOS-Template"
-            ReferencedContainer = "container:DM-iOS-Template.xcodeproj">
+            BuildableName = "FlourCreations.app"
+            BlueprintName = "FlourCreations"
+            ReferencedContainer = "container:FlourCreations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug (Production)">
+      buildConfiguration = "Debug (Development)">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release (Production)"
+      buildConfiguration = "Release (Developement)"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
