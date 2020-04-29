@@ -16,4 +16,6 @@ struct Creation: Identifiable, Codable {
   var id: String
   var name: String
   var summary: String?
+  var headerPhoto: Photo
+  var photos: [Photo]?
 }
