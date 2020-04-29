@@ -7,31 +7,39 @@
 //
 
 import SwiftUI
+import Combine
 
 
 struct Gallery: View {
-  var body: some View {
-    List(creations(), id: \.id) { creation in
-      GalleryItem(creation: creation)
-    }
+  @ObservedObject var viewModel: GalleryViewModel
+  @State var creations: [Creation] = []
+
+  init(viewModel: GalleryViewModel) {
+    self.viewModel = viewModel
   }
 
-  private func creations() -> [Creation] {
-    let creationDicts = [
-      ["id": "123", "name": "First bread"],
-      ["id": "456", "name": "Second bread", "summary": "With Summary."]
-    ]
-    do {
-      let json = try JSONSerialization.data(withJSONObject: creationDicts)
-      return try JSONDecoderWrapper().decode([Creation].self, from: json)
-    } catch {
-      return []
+  var body: some View {
+    List(creations, id: \.id) { creation in
+      GalleryItem(creation: creation)
+    }.onAppear(perform: loadCreations)
+  }
+
+  // TODO: remove to rely on viewModel method
+  // when getting publishing/observing working
+  private func loadCreations() {
+    NetworkClient().fetchCreations() { result in
+      switch result {
+      case .success(let creationResponse):
+        self.creations = creationResponse.data
+      case .failure(let error):
+        print(error)
+      }
     }
   }
 }
 
 struct Gallery_Previews: PreviewProvider {
-    static var previews: some View {
-        Gallery()
-    }
+  static var previews: some View {
+    Gallery(viewModel: GalleryViewModel())
+  }
 }

@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct CreationResponse: Codable {
+  var data: [Creation]
+}
+
 struct Creation: Identifiable, Codable {
   var id: String
   var name: String

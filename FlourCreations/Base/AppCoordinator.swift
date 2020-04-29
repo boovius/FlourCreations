@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 class AppCoordinator: Coordinator {
   var navigationController: UINavigationController
@@ -13,13 +14,14 @@ class AppCoordinator: Coordinator {
   }
   
   func start() {
-    window.rootViewController = navigationController
+    let viewModel = GalleryViewModel()
+    window.rootViewController = UIHostingController(rootView: Gallery(viewModel: viewModel))
     
-    if appSession.isLoggedIn(user: appSession.currentUser) {
-      presentFeed()
-    } else {
-      presentSignIn()
-    }
+//    if appSession.isLoggedIn(user: appSession.currentUser) {
+//      presentGallery()
+//    } else {
+//      presentSignIn()
+//    }
     
     window.makeKeyAndVisible()
   }
@@ -28,7 +30,7 @@ class AppCoordinator: Coordinator {
 // MARK: Presentation Methods
 
 extension AppCoordinator {
-  func presentFeed() {
+  func presentGallery() {
     let feedCoordinator = FeedCoordinator(navigationController)
     feedCoordinator.start()
     childCoordinators.append(feedCoordinator)
@@ -47,7 +49,7 @@ extension AppCoordinator {
 extension AppCoordinator: SignInCoordinatorDelegate {
   func finishSignInFlow(coordinator: SignInCoordinator) {
     childDidFinish(coordinator)
-    presentFeed()
+    presentGallery()
   }
 }
 
