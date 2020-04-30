@@ -37,6 +37,7 @@
 		5EA006DA245A041C009CD352 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006D9245A041C009CD352 /* Photo.swift */; };
 		5EA006DD245B0667009CD352 /* CreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006DC245B0667009CD352 /* CreationView.swift */; };
 		5EA006DF245B0676009CD352 /* CreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006DE245B0676009CD352 /* CreationViewModel.swift */; };
+		5EA006E1245B2EAB009CD352 /* NetworkPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006E0245B2EAB009CD352 /* NetworkPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		5EA006D9245A041C009CD352 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5EA006DC245B0667009CD352 /* CreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationView.swift; sourceTree = "<group>"; };
 		5EA006DE245B0676009CD352 /* CreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewModel.swift; sourceTree = "<group>"; };
+		5EA006E0245B2EAB009CD352 /* NetworkPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPublisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			children = (
 				06A9FB63242A6D9D008B59DE /* NetworkClient.swift */,
 				065867A3242EA07100AB793B /* ErrorResponse.swift */,
+				5EA006E0245B2EAB009CD352 /* NetworkPublisher.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				0676B5E52432A3B30096CFD2 /* ViewModeled.swift in Sources */,
 				0676B5E12432566D0096CFD2 /* SignInViewModel.swift in Sources */,
 				065867A4242EA07100AB793B /* ErrorResponse.swift in Sources */,
+				5EA006E1245B2EAB009CD352 /* NetworkPublisher.swift in Sources */,
 				5EA006CF2458BC2D009CD352 /* GalleryItemView.swift in Sources */,
 				5EA006D62459FFAF009CD352 /* ImageLoader.swift in Sources */,
 				06F2EDF8242A849E00E89C5B /* User.swift in Sources */,

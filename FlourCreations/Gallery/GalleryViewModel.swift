@@ -12,6 +12,7 @@ import Combine
 class GalleryViewModel: ObservableObject {
   private var cancellable: AnyCancellable?
   @Published var creations: [Creation] = []
+  @Published var error: ServerRequestError?
 
   deinit {
     cancellable?.cancel()
@@ -21,25 +22,23 @@ class GalleryViewModel: ObservableObject {
 // MARK: - data source methods
 extension GalleryViewModel {
   func loadCreations() {
-    let url =  Environment.apiUrl.appendingPathComponent("api/v1/creations")
-    cancellable = URLSession.shared.dataTaskPublisher(for: url)
-      .tryMap() { element -> Data in
-        guard let httpResponse = element.response as? HTTPURLResponse, httpResponse.statusCode >= 200, httpResponse.statusCode < 300 else {
-          throw URLError(.badServerResponse)
-        }
-        return element.data
-      }
-      .decode(type: CreationResponse.self, decoder: JSONDecoderWrapper())
-      .receive(on: DispatchQueue.main)
+    cancellable = NetworkPublisher().publishCreations()
       .map { $0.data }
+      .receive(on: DispatchQueue.main)
       .sink(
-        receiveCompletion: {
-          print("received completion\($0)")
+        receiveCompletion: { [weak self] completion in
+          guard let self = self else { return }
+          switch completion {
+          case .failure(let error):
+            self.error = .serverError(message: error.localizedDescription)
+          case .finished:
+            print("Finished receiving Creations.")
+          }
 
-      },
+        },
         receiveValue: { [weak self] creations in
           guard let self = self else { return }
           self.creations = creations
-      })
+        })
   }
 }
