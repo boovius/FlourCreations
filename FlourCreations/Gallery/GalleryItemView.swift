@@ -12,7 +12,7 @@ struct GalleryItem: View {
   var creation: Creation
 
   var body: some View {
-    VStack {
+    VStack(alignment: .leading) {
       AsyncImage(
         urlString: creation.headerPhoto.url,
         placeholder: Text("Loading ...")

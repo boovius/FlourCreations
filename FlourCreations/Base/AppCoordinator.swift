@@ -31,9 +31,7 @@ class AppCoordinator: Coordinator {
 
 extension AppCoordinator {
   func presentGallery() {
-    let feedCoordinator = FeedCoordinator(navigationController)
-    feedCoordinator.start()
-    childCoordinators.append(feedCoordinator)
+    // TODO: fix this, put something here or remove Coordinator structure
   }
   
   func presentSignIn() {

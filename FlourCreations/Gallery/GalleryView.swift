@@ -19,9 +19,15 @@ struct Gallery: View {
   }
 
   var body: some View {
-    List(creations, id: \.id) { creation in
-      GalleryItem(creation: creation)
-    }.onAppear(perform: loadCreations)
+    NavigationView {
+      List(creations, id: \.id) { creation in
+        NavigationLink(destination: CreationView(creation: creation)) {
+          GalleryItem(creation: creation)
+        }
+
+      }.onAppear(perform: loadCreations)
+      .navigationBarTitle("My Creations")
+    }
   }
 
   // TODO: remove to rely on viewModel method
