@@ -10,24 +10,36 @@ import SwiftUI
 import Combine
 
 class GalleryViewModel: ObservableObject {
-  private let newtworkClient: NetworkClientType
+  private var cancellable: AnyCancellable?
   @Published var creations: [Creation] = []
 
-  init(networkClient: NetworkClientType = NetworkClient()) {
-    self.newtworkClient = networkClient
+  deinit {
+    cancellable?.cancel()
   }
 }
 
 // MARK: - data source methods
 extension GalleryViewModel {
   func loadCreations() {
-    NetworkClient().fetchCreations() { result in
-      switch result {
-      case .success(let creationResponse):
-        self.creations = creationResponse.data
-      case .failure(let error):
-        print(error)
+    let url =  Environment.apiUrl.appendingPathComponent("api/v1/creations")
+    cancellable = URLSession.shared.dataTaskPublisher(for: url)
+      .tryMap() { element -> Data in
+        guard let httpResponse = element.response as? HTTPURLResponse, httpResponse.statusCode >= 200, httpResponse.statusCode < 300 else {
+          throw URLError(.badServerResponse)
+        }
+        return element.data
       }
-    }
+      .decode(type: CreationResponse.self, decoder: JSONDecoderWrapper())
+      .receive(on: DispatchQueue.main)
+      .map { $0.data }
+      .sink(
+        receiveCompletion: {
+          print("received completion\($0)")
+
+      },
+        receiveValue: { [weak self] creations in
+          guard let self = self else { return }
+          self.creations = creations
+      })
   }
 }

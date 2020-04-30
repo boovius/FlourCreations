@@ -12,7 +12,6 @@ import Combine
 
 struct Gallery: View {
   @ObservedObject var viewModel: GalleryViewModel
-  @State var creations: [Creation] = []
 
   init(viewModel: GalleryViewModel) {
     self.viewModel = viewModel
@@ -20,26 +19,13 @@ struct Gallery: View {
 
   var body: some View {
     NavigationView {
-      List(creations, id: \.id) { creation in
+      List(viewModel.creations, id: \.id) { creation in
         NavigationLink(destination: CreationView(creation: creation)) {
           GalleryItem(creation: creation)
         }
 
-      }.onAppear(perform: loadCreations)
+      }.onAppear(perform: viewModel.loadCreations)
       .navigationBarTitle("My Creations")
-    }
-  }
-
-  // TODO: remove to rely on viewModel method
-  // when getting publishing/observing working
-  private func loadCreations() {
-    NetworkClient().fetchCreations() { result in
-      switch result {
-      case .success(let creationResponse):
-        self.creations = creationResponse.data
-      case .failure(let error):
-        print(error)
-      }
     }
   }
 }
