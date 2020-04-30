@@ -9,5 +9,6 @@
 import Foundation
 
 struct Photo: Codable {
+  var id: String
   var url: String
 }

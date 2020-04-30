@@ -12,13 +12,22 @@ struct CreationView: View {
   var creation: Creation
   var body: some View {
     VStack {
-      summary()
-      Spacer()
+      header()
+      photos()
       Spacer()
     }
   }
 
-  private func summary() -> some View {
+  private func photos() -> some View {
+    List(creation.photos, id: \.id) { photo in
+      AsyncImage(
+        urlString: photo.url,
+        placeholder: Text("Loading ...")
+      ).aspectRatio(contentMode: .fit)
+    }
+  }
+
+  private func header() -> some View {
     VStack {
       HStack {
         AsyncImage(
@@ -40,7 +49,7 @@ struct CreationView: View {
 
 struct CreationView_Previews: PreviewProvider {
   static var previews: some View {
-    let headerPhoto = Photo(url: "https://creation-shelf.s3.amazonaws.com/7BAF4AB6-D740-4279-A12E-6CC074DD6689.jpeg")
+    let headerPhoto = Photo(id: "1", url: "https://creation-shelf.s3.amazonaws.com/7BAF4AB6-D740-4279-A12E-6CC074DD6689.jpeg")
     let creation = Creation(id: "123", name: "An amazing new recipe with all sorts of stuff!", summary: "With all sorts of goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies and goodies.", headerPhoto: headerPhoto, photos: [])
     return CreationView(creation: creation)
   }
