@@ -8,10 +8,18 @@
 
 import Foundation
 
-struct Step: Codable {
+struct Step: Hashable, Codable, Identifiable, Equatable {
   var id: String
   var description: String
   var order: Int?
   var seconds: Int?
-  var photos: [Photo]
+  var photos: [Photo] = []
+
+  static func == (lhs: Step, rhs: Step) -> Bool {
+    return lhs.id == rhs.id
+  }
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(self.id)
+  }
 }

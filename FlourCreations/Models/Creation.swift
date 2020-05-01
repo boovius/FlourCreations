@@ -17,6 +17,6 @@ struct Creation: Identifiable, Codable {
   var name: String
   var summary: String?
   var headerPhoto: Photo
-  var photos: [Photo]
+  var photos: [Photo] = []
   var recipe: Recipe?
 }

@@ -12,6 +12,6 @@ struct Recipe: Codable {
   var id: String
   var inspiredBy: String?
   var sourceUrl: String?
-  var steps: [Step]
-  var photos: [Photo]
+  var steps: [Step] = []
+  var photos: [Photo] = []
 }
