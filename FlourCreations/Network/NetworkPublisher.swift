@@ -21,7 +21,7 @@ class NetworkPublisher {
   }
 
   func publishCreations() -> AnyPublisher<CreationResponse, ServerRequestError> {
-    let url =  Environment.apiUrl.appendingPathComponent("api/v1/creations")
+    let url =  Config.apiUrl.appendingPathComponent("api/v1/creations")
     return fetchAndPublish(from: url)
   }
 

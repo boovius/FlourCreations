@@ -28,6 +28,7 @@
 		06A9FB64242A6D9D008B59DE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A9FB63242A6D9D008B59DE /* NetworkClient.swift */; };
 		06F2EDF8242A849E00E89C5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F2EDF7242A849E00E89C5B /* User.swift */; };
 		06F2EDFA242A867D00E89C5B /* ServerRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F2EDF9242A867D00E89C5B /* ServerRequestError.swift */; };
+		5E443C89245C61D300B6A443 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E443C88245C61D300B6A443 /* ImageCache.swift */; };
 		5EA006CD2458B54F009CD352 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006CC2458B54F009CD352 /* GalleryView.swift */; };
 		5EA006CF2458BC2D009CD352 /* GalleryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006CE2458BC2D009CD352 /* GalleryItemView.swift */; };
 		5EA006D12458C2D9009CD352 /* Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA006D02458C2D9009CD352 /* Creation.swift */; };
@@ -81,6 +82,7 @@
 		06A9FB63242A6D9D008B59DE /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		06F2EDF7242A849E00E89C5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		06F2EDF9242A867D00E89C5B /* ServerRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequestError.swift; sourceTree = "<group>"; };
+		5E443C88245C61D300B6A443 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		5EA006CC2458B54F009CD352 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		5EA006CE2458BC2D009CD352 /* GalleryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemView.swift; sourceTree = "<group>"; };
 		5EA006D02458C2D9009CD352 /* Creation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creation.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				5EA006D52459FFAF009CD352 /* ImageLoader.swift */,
 				5EA006D7245A001E009CD352 /* AsyncImageView.swift */,
+				5E443C88245C61D300B6A443 /* ImageCache.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E443C89245C61D300B6A443 /* ImageCache.swift in Sources */,
 				06A9C53C242D4033004E9D2A /* AppCoordinator.swift in Sources */,
 				0678B26F242565D100D4973C /* SignInViewController.swift in Sources */,
 				065867A2242E8D7E00AB793B /* Storyboarded.swift in Sources */,
@@ -495,8 +499,9 @@
 				APP_NAME = FlourCreations;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,8 +607,9 @@
 				APP_NAME = "FlourCreations (staging)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,8 +709,9 @@
 				APP_NAME = "FlourCreations (staging)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -804,8 +811,9 @@
 				APP_NAME = FlourCreations;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -966,8 +974,9 @@
 				APP_NAME = "FlourCreations (dev)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,8 +996,9 @@
 				APP_NAME = "FlourCreations (dev)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4K2JRLM6Q3;
+				DEVELOPMENT_TEAM = 7X4JZAH8WL;
 				INFOPLIST_FILE = FlourCreations/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

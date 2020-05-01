@@ -9,7 +9,7 @@ class NetworkClient: NetworkClientType {
   private let session = URLSession.shared
   
   func verify(with phoneNumber: String, onCompletion: @escaping (Result<User, ServerRequestError>) -> Void) {
-    let url = Environment.apiUrl.appendingPathComponent("users/verify")
+    let url = Config.apiUrl.appendingPathComponent("users/verify")
     let parameters = ["phone_number": phoneNumber]
     
     NetworkClient.request(url: url, parameters: parameters) { data, response, error in
@@ -41,7 +41,7 @@ class NetworkClient: NetworkClientType {
   }
 
   func fetchCreations(onCompletion: @escaping (Result<CreationResponse, ServerRequestError>) -> Void) {
-    let url = Environment.apiUrl.appendingPathComponent("api/v1/creations")
+    let url = Config.apiUrl.appendingPathComponent("api/v1/creations")
 
     NetworkClient.get(url: url) { data, response, error in
       if data == nil || response == nil || error != nil {

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CreationView: View {
+  @Environment(\.imageCache) var cache: ImageCache
   var creation: Creation
   var body: some View {
     VStack {
@@ -22,7 +23,9 @@ struct CreationView: View {
     List(creation.photos, id: \.id) { photo in
       AsyncImage(
         urlString: photo.url,
-        placeholder: Text("Loading ...")
+        placeholder: Text("Loading ..."),
+        cache: self.cache,
+        configuration: { $0.resizable() }
       ).aspectRatio(contentMode: .fit)
     }
   }

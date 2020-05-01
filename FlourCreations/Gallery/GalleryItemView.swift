@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct GalleryItem: View {
+  @Environment(\.imageCache) var cache: ImageCache
   var creation: Creation
 
   var body: some View {
     VStack(alignment: .leading) {
       AsyncImage(
         urlString: creation.headerPhoto.url,
-        placeholder: Text("Loading ...")
+        placeholder: Text("Loading ..."),
+        cache: self.cache,
+        configuration: { $0.resizable() }
       ).aspectRatio(contentMode: .fit)
       Text(creation.name)
         .font(.title)
